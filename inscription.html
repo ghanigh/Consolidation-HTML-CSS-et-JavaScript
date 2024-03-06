@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr>
+<head>
+    <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire d'inscription</title>
+<link rel="stylesheet" href="/CSS/inscription.css">
+</head>
+
+<body>
+    <div>
+        <h1>Formulaire d'inscription</h1>
+        <h2>Veuillez remplire les champs ci-dessous</h2>
+    </div>
+    <form action="/inscription.html" method="post">CONTACT</form>
+    <ul>
+        <li>
+            <h3>Nom et Prénom</h3>
+            <div>
+                <label for="name">Nom</label><br>
+                <input type="text" id="nom" name="user_name"><br>
+            </div>
+
+            <div>
+                <label for="prenom">Prénom</label><br>
+                <input type="text" id="prenom" name="user_name"><br>
+            </div>
+            <h3>Email</h3>
+            <div>
+                <label for="email">Entrez une adresse mail valide</label><br>
+                <input type="email" id="email" email="user_email"><br>
+            </div>
+
+            <div>
+                <h3>Adresse</h3>
+                <label for="tentacles">Numéro de la voie</label><br>
+                <input type="number" id="tentacles" name="tentacles" min="1" max="100" /><br>
+                <input type="radio" id="avenue" name="radio" value="avenue" />
+                <label for="avenue">Avenue</label>
+            </div>
+
+            <div>
+                <input type="radio" id="rue" name="radio" value="rue" />
+                <label for="rue">Rue</label><br>
+                <input type="radio" id="rue" name="radio" value="rue" />
+                <label for="Boulevard">Boulevard</label><br>
+                <label for="adresse">Nom de la voie</label><br>
+                <input type="Postale" id="Postal" adresse="user_adresse"></input><br>
+                <label for="adresse">Code Postal</label><br>
+                <input type="Adresse" id="Postal" adresse="user_adresse"></input><br>
+                <label for="adresse">Ville</label><br>
+                <input type="Adresse" id="Ville" adresse="user_adresse"></input><br>
+            </div>
+
+            <div>
+                <h3>Sexe</h3>
+                <input type="radio" id="homme" name="radio" value="homme" checked />
+                <label for="homme">Homme</label>
+            </div>
+
+            <div>
+                <input type="radio" id="femme" name="radio" value="femme" />
+                <label for="femme">Femme</label><br>
+            </div>
+            <div>
+                <div class="button">
+                    <button type="submit">S'INSCRIRE</button>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
