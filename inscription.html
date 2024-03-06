@@ -8,11 +8,24 @@
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+          <h1>Association Sportive de Natation - Île-De-France</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/info.html">Info</a></li>
+            <li><a href="/pratique.html">Pratique</a></li>
+            <li><a href="/relation.html">Mise en relation</a></li>
+          </ul>
+        </nav>
+      </header>
     <div>
         <h1>Formulaire d'inscription</h1>
         <h2>Veuillez remplire les champs ci-dessous</h2>
     </div>
-    <form action="/inscription.html" method="post">CONTACT</form>
+    <form action="/inscription.html" method="post">INFORMATION</form>
     <ul>
         <li>
             <h3>Nom et Prénom</h3>
@@ -35,20 +48,25 @@
                 <label for="email">Entrez une adresse mail valide</label><br>
                 <input type="email" id="email" email="user_email"><br>
             </div>
+
+            <h3>Numéro de téléphone</h3>
+            <div>
+                <label for="phone">Entrez vôtre numéro de téléphone</label><br>
+                <input type="phone" id="phone" email="user_phone"><br>
+            </div>
       
             <div>
                 <h3>Adresse</h3>
                 <label for="tentacles">Numéro de la voie</label><br>
                 <input type="number" id="tentacles" name="tentacles" min="1" max="100" /><br>
                 <input type="radio" id="avenue" name="radio" value="avenue" />
-                <label for="avenue">Avenue</label>
-            </div>
-
-            <div>
+                <label for="avenue">Avenue</label><br>
                 <input type="radio" id="rue" name="radio" value="rue" />
                 <label for="rue">Rue</label><br>
-                <input type="radio" id="rue" name="radio" value="rue" />
+                <input type="radio" id="rue" name="radio" value="Boulevard" />
                 <label for="Boulevard">Boulevard</label><br>
+                <input type="radio" id="bis" name="radio" value="bis" />
+                <label for="bis">Bis</label><br>
                 <label for="adresse">Nom de la voie</label><br>
                 <input type="Postale" id="Postal" adresse="user_adresse"></input><br>
                 <label for="adresse">Code Postal</label><br>
@@ -59,15 +77,18 @@
 
             <div>
                 <h3>Sexe</h3>
-                <input type="radio" id="homme" name="radio" value="homme" checked />
+                <input type="checkbox" id="homme" name="radio" value="homme" />
                 <label for="homme">Homme</label>
             </div>
 
             <div>
-                <input type="radio" id="femme" name="radio" value="femme" />
+                <input type="checkbox" id="femme" name="radio" value="femme" />
                 <label for="femme">Femme</label><br>
             </div>
-            <div>
+            <h3>Télécharger le certificat médical</h3>
+            <input type="file" id="file" name="file" value="file" />
+            <div><br>
+                <h3>Cliquer sur le bouton pour finaliser vôtre inscription</h3>
                 <div class="button">
                     <button type="submit">S'INSCRIRE</button>
                 </div>
@@ -75,6 +96,7 @@
             </div>
         </li>
     </ul>
+    
 </body>
 
 </html>
